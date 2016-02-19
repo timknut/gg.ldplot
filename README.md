@@ -1,5 +1,5 @@
 # gg.ldplot
-Plot a LD data.frame from vcftools with ggplot2
+Plot a pairwise LD matrix from vcftools with ggplot2
 
 ## Install
 ```{R}
