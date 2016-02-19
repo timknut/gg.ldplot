@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggldplot.R
 \name{make_full_dl_matrix}
 \alias{make_full_dl_matrix}
-\title{Make full partial martix}
+\title{Make full partial martix. For internal use.}
 \usage{
 make_full_dl_matrix(x)
 }
@@ -13,6 +13,6 @@ make_full_dl_matrix(x)
 a data.frame
 }
 \description{
-Make full partial martix
+Make full partial martix. For internal use.
 }
 

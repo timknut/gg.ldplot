@@ -4,15 +4,21 @@
 \alias{plot_LDmatrix}
 \title{Plot LD matrix heatmap}
 \usage{
-plot_LDmatrix(x)
+plot_LDmatrix(x, simplify.labels = FALSE)
 }
 \arguments{
 \item{x}{vcftools ld data.frame}
+
+\item{simplify.labels}{Logical. Should labels be simplified? For big data sets.}
 }
 \value{
 a ld plot
 }
 \description{
 Plot LD matrix heatmap
+}
+\examples{
+data("bovine_vcf")
+plot_LDmatrix(bovine_vcf)
 }
 

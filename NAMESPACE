@@ -2,5 +2,7 @@
 
 export(make_full_dl_matrix)
 export(plot_LDmatrix)
+export(set_labels)
+import(assertthat)
 import(dplyr)
 import(ggplot2)
