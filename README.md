@@ -8,7 +8,7 @@ install_github("timknut/gg.ldplot")
 ```
 
 ## vcftools
-The input data.frame could be created with [vcftools](https://vcftools.github.io/index.html) from a phased vcf with eg:
+Create the input data.frame with [vcftools](https://vcftools.github.io/index.html) from a *phased* vcf with eg:
 
 ```{sh}
 vcftools --gzvcf phased_vcf.vcf.gz --out bovine_vcf --hap-r2
