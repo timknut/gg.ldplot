@@ -15,8 +15,12 @@ vcftools --gzvcf example_LD_haploview_10_snps_beagle.vcf.gz --out ld_test_10SNPs
 ```
 
 ## Example
+The package includes a small example dataset.
 
-`plot_LDmatrix(ld_test_10SNPs.hap)`
+```{R}
+data("bovine_vcf")
+plot_LDmatrix(bovine_vcf)
+```
 
 ![Example plot](/data/Rplot.png)
 
