@@ -13,7 +13,7 @@ Create the input data.frame with [vcftools](https://vcftools.github.io/index.htm
 ```{sh}
 vcftools --gzvcf phased_vcf.vcf.gz --out bovine_vcf --hap-r2
 ```
-**WARNING** vcftools outputs a malformatted table. Fix it with `sed -i "s/\s*$// bovine_vcf.ld"`
+**WARNING** vcftools outputs a malformatted table. Fix it with `sed -i "s/\s*$//" bovine_vcf.ld"`
 
 Now read the file into R.
 ```{R}
