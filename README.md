@@ -11,7 +11,13 @@ install_github("timknut/gg.ldplot")
 The input data.frame could be created with [vcftools](https://vcftools.github.io/index.html) from a phased vcf with eg:
 
 ```{sh}
-vcftools --gzvcf example_LD_haploview_10_snps_beagle.vcf.gz --out ld_test_10SNPs --hap-r2
+vcftools --gzvcf phased_vcf.vcf.gz --out bovine_vcf --hap-r2
+```
+**WARNING** vcftools outputs a malformatted table. Fix it with `sed -i "s/\s*$// bovine_vcf.ld"`
+
+Now read the file into R.
+```{R}
+bovine_vcf <- read.table("bovine_vcf.ld", header = TRUE, stringsAsFactors = F)
 ```
 
 ## Example
