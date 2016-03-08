@@ -7,7 +7,7 @@ Plot a pairwise LD matrix from vcftools with ggplot2
 install_github("timknut/gg.ldplot")
 ```
 
-## Run without dependencies on the CIGENE cluster
+## Run without devtools installing on the CIGENE cluster
 `module load R/3.2.3`
 
 **Example R-script.** This will make a *.png with your plot in working dir.
