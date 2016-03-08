@@ -1,10 +1,23 @@
 # gg.ldplot
 Plot a pairwise LD matrix from vcftools with ggplot2
 
-## Install
+## Install with devtools
 ```{R}
 # library(devtools)
 install_github("timknut/gg.ldplot")
+```
+
+## Run without dependencies on the CIGENE cluster
+`module load R/3.2.3`
+
+**Example R-script.** This will make a *.png with your plot in working dir.
+```{R}
+.libPaths( c( .libPaths(), "/mnt/users/tikn/R/x86_64-pc-linux-gnu-library/3.2")) ## Dependencies
+library(gg.ldplot, lib.loc = "/mnt/users/tikn/R/x86_64-pc-linux-gnu-library/3.2")
+data("bovine_vcf")
+png("test_LD.png")
+plot_LDmatrix(bovine_vcf)
+dev.off()
 ```
 
 ## vcftools
